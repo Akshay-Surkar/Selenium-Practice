@@ -26,6 +26,8 @@ public class methods {
 		//.click(); it is used to click on a button
 		//.clear(); it is used to clear text on the web element
 		//.getText(); it is used to get text of a webelement it return string
+                //.getTitle();it is used to get the title of webpage
+               //. getURL() ; it is used to get the URL
 	}
 	
 	
