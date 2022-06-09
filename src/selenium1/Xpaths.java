@@ -12,7 +12,7 @@ public class Xpaths {
 		driver.get("https://opensource-demo.orangehrmlive.com");
 		driver.manage().window().maximize();
 	   // driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");//1.using "By.xpath" locator
-		driver.findElement(By.xpath(("//input[@type='text'])[2]"))).sendKeys("Admin");//2.if multiple node matching then use this
+		driver.findElement(By.xpath("(//input[@type='text'])[2]"))).sendKeys("Admin");//2.if multiple node matching then use this
 		driver.findElement(By.xpath("//input[@name='txtPassword' and @ id = 'txtPassword']")).sendKeys("admin123");//using logical "and" operator,both attribute should get match
 		driver.findElement(By.xpath("//input[@name='Submit' or @ id = 'btnLogi']")).click();//using logical "or" operator,one attribute should be correct or match.
 		driver.navigate().back();
